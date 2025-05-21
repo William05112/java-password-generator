@@ -39,6 +39,9 @@ public class App {
         String password = nome + "-" + cognome + "-" + colorePreferito + "-" + sommaDate;
         System.out.println(password);
 
+        // Chiudo lo scanner
+        scanner.close();
+
 
 
 
