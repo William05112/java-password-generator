@@ -1,8 +1,9 @@
+package org.lessons.java.security;
+
 // Importo lo scanner
 import java.util.Scanner;
 
 public class PasswordGenerator {
-
     public static void main(String[] args) throws Exception {
         // Creo un nuovo scanner 
         Scanner scanner = new Scanner(System.in);
@@ -41,6 +42,8 @@ public class PasswordGenerator {
 
         // Chiudo lo scanner
         scanner.close();
+    }
+}
 
 
 
@@ -51,6 +54,7 @@ public class PasswordGenerator {
 
         
 
-    }
-}
+
+
+
 
