@@ -20,21 +20,21 @@ public class PasswordGenerator {
         System.out.println("Inserisci il tuo colore preferito");
         String colorePreferito = scanner.nextLine();
         
-        // Raccolgo data di nascita per giorno/mese/anno separatamente e converto le stringe in numeri
+        // Raccolgo data di nascita per giorno/mese/anno separatamente
          System.out.println("Inserisci giorno di nascita");
-        String giornoNascitaStringa = scanner.nextLine();
-        int giornoNascita = Integer.parseInt(giornoNascitaStringa);
+        String giornoNascita = scanner.nextLine();
+        
 
         System.out.println("Inserisci mese di nascita");
-        String meseNascitaStringa = scanner.nextLine();
-        int meseNascita = Integer.parseInt(meseNascitaStringa);
+        String meseNascita = scanner.nextLine();
+        
 
         System.out.println("Inserisci anno di nascita");
-        String annoNascitaStringa = scanner.nextLine();
-        int annoNascita = Integer.parseInt(annoNascitaStringa);
+        String annoNascita = scanner.nextLine();
+        
 
         // Sommo i tre interi 
-        int sommaDate = giornoNascita + meseNascita + annoNascita;
+        int sommaDate = Integer.parseInt(giornoNascita) + Integer.parseInt(meseNascita) + Integer.parseInt(annoNascita);
 
         // Scrivo l'output finale
         String password = nome + "-" + cognome + "-" + colorePreferito + "-" + sommaDate;
